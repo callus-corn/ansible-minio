@@ -1,0 +1,11 @@
+---
+
+- name: setup minio
+  hosts: minio
+  become: yes
+  tasks:
+
+    - name: setup minio
+      import_role:
+        name: minio
+      tags: minio
