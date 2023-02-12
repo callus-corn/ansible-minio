@@ -38,6 +38,10 @@
 - name: mkdir /opt/cert
   file:
     path: /opt/cert 
+    state: directory
+    owner: minio-user
+    group: minio-user
+    mode: 0755
 
 - name: copy key
   copy:
