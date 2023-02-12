@@ -20,6 +20,7 @@
 - name: mkdir /mnt/nas
   file:
     path: /mnt/nas
+    state: directory
 
 - name: mount /mnt/nas/
   mount:
@@ -32,6 +33,7 @@
 - name: mkdir /mnt/nas
   file:
     path: /mnt/nas/minio
+    state: directory
 
 - name: mkdir /opt/cert
   file:
