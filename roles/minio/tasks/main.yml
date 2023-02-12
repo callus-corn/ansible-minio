@@ -45,7 +45,7 @@
 
 - name: copy key
   copy:
-    src: /opt/cert/minio-1.localdomain.key
+    src: /opt/cert/minio-1.localdomain/minio-1.localdomain.key
     dest: /opt/cert/minio-1.localdomain.key
 
 - name: make key
@@ -63,7 +63,7 @@
 
 - name: copy cert
   copy:
-    src: /opt/cert/minio-1.localdomain.crt
+    src: /opt/cert/minio-1.localdomain/minio-1.localdomain.crt
     dest: /opt/cert/public.crt
     owner: minio-user
     group: minio-user
